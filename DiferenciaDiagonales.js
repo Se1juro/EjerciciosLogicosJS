@@ -1,5 +1,14 @@
 /*Este ejercicio esta realizado para encontrar la diferencia entre la diagonal principal
-y la diagonal secundaria de una matriz*/
+y la diagonal secundaria de una matriz
+
+La diagonal principal es cuando su posicion i es igual a su posicion j
+La diagonal secundaria es cuando el valor de la suma entre su posicion i y 
+su posicion j es igual al tamaño de la matriz, 
+Ejemplo:
+
+Posicion (0,2) Su suma da 2, tamaño del array = 2 (Porque empieza desde 0)
+Posicion (1,1) Su suma da 2, tamaño del array = 2 
+Posicion (2,0) Su suma da 2, tamaño del array = 2*/
 
 let arr = [
   [11, 2, 4],
