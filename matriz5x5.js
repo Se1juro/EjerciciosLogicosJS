@@ -9,14 +9,18 @@ for (let i = 0; i < 5; i++) {
   }
 }
 
-function imprimirVector(arr) {
-  let vector = [];
-  arr.forEach((i) => {
-    vector.push(i);
-  });
-  document.write(vector.sort().toString());
-  return vector;
+function imprimirVector(array) {
+  let vector = new Array(25);
+  let contadorPos = 0;
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array.length; j++) {
+      vector[contadorPos] = array[i][j];
+      contadorPos++;
+    }
+  }
+  console.log("tamaño: " + vector.length);
+  console.log("Vector normal: " + vector.toString());
+  console.log("Vector ordenado: " + vector.sort());
 }
 
 imprimirVector(matriz);
-
